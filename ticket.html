@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title> التذكرة</title>
+</head>
+<body dir="rtl">
+    <header>
+        <nav class="navbar" style="background-color: rgb(26, 85, 66);">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="images/wclogo.png" alt="" width="60" height="60" class="rounded">
+                    <strong class="p-1" style="color: white;">أهلًا بالعالم</strong>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <h1 class="text-center" style="background-color:  rgb(26, 85, 66); color: white;">أنواع التذاكر</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>نوع التذكرة</th>
+                    <th>الوصف</th>
+                    <th>السعر</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ذهبية</td>
+                    <td>تذكرة VIP مع مقاعد مميزة</td>
+                    <td>1000 ريال</td>
+                </tr>
+                <tr>
+                    <td>فضية</td>
+                    <td>تذكرة مميزة مع مقاعد جيدة</td>
+                    <td>600 ريال</td>
+                </tr>
+                <tr>
+                    <td>عادية</td>
+                    <td>تذكرة دخول عامة</td>
+                    <td>300 ريال</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 class="text-center" style="background-color: rgb(26, 85, 66); color: white;">حجز التذكره</h1>
+        <form action="" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">الاسم الكامل</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">رقم الهاتف</label>
+                <input type="text" class="form-control" id="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="ticket-type" class="form-label">نوع التذكرة</label>
+                <select class="form-select" id="ticket-type" required>
+                    <option value="gold">ذهبية</option>
+                    <option value="silver">فضية</option>
+                    <option value="regular">عادية</option>
+                </select>
+            </div>
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn" style="background-color: rgb(26, 85, 66); color: white;">إتمام الحجز</button>
+
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

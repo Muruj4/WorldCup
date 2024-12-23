@@ -1,0 +1,28 @@
+body {
+    font-family: 'Almarai', sans-serif;
+    padding-bottom: 70px;
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 300px;
+    border: 1px solid #000;
+    margin: 2rem auto;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: rgb(26, 85, 66);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.9rem;
+}
